@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories | ProShop E-commerce</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>ProShop</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="utility-nav">
+            <a href="cart.html">Cart (0)</a>
+            <a href="account.html">Account</a>
+        </div>
+    </header>
+
+    <main class="categories-page-layout">
+
+        <aside class="category-filters">
+            <h2>Refine Categories</h2>
+
+            <section class="filter-group">
+                <h3>Price</h3>
+                <form>
+                    <label for="filter-price">Max Price:</label>
+                    <input type="range" id="filter-price" name="price" min="0" max="1000" value="1000">
+                    <output for="filter-price">$1000</output>
+                </form>
+            </section>
+
+            <section class="filter-group">
+                <h3>Rating</h3>
+                <fieldset>
+                    <legend class="sr-only">Filter by Rating</legend>
+                    <input type="radio" id="rating-4up" name="rating" value="4up"><label for="rating-4up">4 Stars & up</label><br>
+                    <input type="radio" id="rating-3up" name="rating" value="3up"><label for="rating-3up">3 Stars & up</label>
+                </fieldset>
+            </section>
+
+            <section class="filter-group">
+                <h3>Brand</h3>
+                <select name="brand" id="filter-brand">
+                    <option value="">All Brands</option>
+                    <option value="brand-a">Brand A</option>
+                    <option value="brand-b">Brand B</option>
+                    <option value="brand-c">Brand C</option>
+                </select>
+            </section>
+        </aside>
+
+        <section id="category-listing">
+            <h1>All Product Categories</h1>
+
+            <section class="category-block" id="laptops-pcs">
+                <h2>💻 Laptops & PCs</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image-placeholder"></div>
+                        <h3>UltraBook Air</h3>
+                        <p class="price">$999.00</p>
+                        <a href="product-details.html?id=A1">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_0](attachment)</div>
+                        <h3>Gaming Desktop</h3>
+                        <p class="price">$1599.00</p>
+                        <a href="product-details.html?id=A2">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_1](attachment)</div>
+                        <h3>Professional Workstation</h3>
+                        <p class="price">$2499.00</p>
+                        <a href="product-details.html?id=A3">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_2](attachment)</div>
+                        <h3>Student Laptop</h3>
+                        <p class="price">$450.00</p>
+                        <a href="product-details.html?id=A4">View Details</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="category-block" id="audio-headphones">
+                <h2>🎧 Audio & Headphones</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_3](attachment)</div>
+                        <h3>Wireless Earbuds Pro</h3>
+                        <p class="price">$149.00</p>
+                        <a href="product-details.html?id=B1">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_4](attachment)</div>
+                        <h3>Studio Headphones</h3>
+                        <p class="price">$199.00</p>
+                        <a href="product-details.html?id=B2">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_5](attachment)</div>
+                        <h3>Portable Bluetooth Speaker</h3>
+                        <p class="price">$79.00</p>
+                        <a href="product-details.html?id=B3">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_6](attachment)</div>
+                        <h3>Home Cinema Soundbar</h3>
+                        <p class="price">$250.00</p>
+                        <a href="product-details.html?id=B4">View Details</a>
+                    </article>
+                </div>
+            </section>
+            
+            <section class="category-block" id="smart-home">
+                <h2>🏠 Smart Home</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_7](attachment)</div>
+                        <h3>Smart Thermostat</h3>
+                        <p class="price">$120.00</p>
+                        <a href="product-details.html?id=C1">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_8](attachment)</div>
+                        <h3>Outdoor Security Camera</h3>
+                        <p class="price">$99.00</p>
+                        <a href="product-details.html?id=C2">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_9](attachment)</div>
+                        <h3>Smart Plug 4-Pack</h3>
+                        <p class="price">$35.00</p>
+                        <a href="product-details.html?id=C3">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_10](attachment)</div>
+                        <h3>Video Doorbell</h3>
+                        <p class="price">$150.00</p>
+                        <a href="product-details.html?id=C4">View Details</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="category-block" id="photography">
+                <h2>📷 Photography</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_11](attachment)</div>
+                        <h3>Pro DSLR Camera</h3>
+                        <p class="price">$1100.00</p>
+                        <a href="product-details.html?id=D1">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_12](attachment)</div>
+                        <h3>Lightweight Tripod</h3>
+                        <p class="price">$65.00</p>
+                        <a href="product-details.html?id=D2">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_13](attachment)</div>
+                        <h3>Zoom Lens 70-200mm</h3>
+                        <p class="price">$899.00</p>
+                        <a href="product-details.html?id=D3">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_14](attachment)</div>
+                        <h3>Compact Camera Drone</h3>
+                        <p class="price">$499.00</p>
+                        <a href="product-details.html?id=D4">View Details</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="category-block" id="gaming">
+                <h2>🎮 Gaming</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_15](attachment)</div>
+                        <h3>Next-Gen Console</h3>
+                        <p class="price">$499.00</p>
+                        <a href="product-details.html?id=E1">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_16](attachment)</div>
+                        <h3>Ergonomic Gaming Chair</h3>
+                        <p class="price">$280.00</p>
+                        <a href="product-details.html?id=E2">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_17](attachment)</div>
+                        <h3>Virtual Reality Headset</h3>
+                        <p class="price">$350.00</p>
+                        <a href="product-details.html?id=E3">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_18](attachment)</div>
+                        <h3>Precision Gaming Mouse</h3>
+                        <p class="price">$60.00</p>
+                        <a href="product-details.html?id=E4">View Details</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="category-block" id="wearables">
+                <h2>⌚ Wearables</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_19](attachment)</div>
+                        <h3>Fitness Tracker Band</h3>
+                        <p class="price">$59.00</p>
+                        <a href="product-details.html?id=F1">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_20](attachment)</div>
+                        <h3>Smart Health Ring</h3>
+                        <p class="price">$199.00</p>
+                        <a href="product-details.html?id=F2">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_21](attachment)</div>
+                        <h3>Hybrid Smartwatch</h3>
+                        <p class="price">$129.00</p>
+                        <a href="product-details.html?id=F3">View Details</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder"></div>
+                        <h3>AR Glasses</h3>
+                        <p class="price">$799.00</p>
+                        <a href="product-details.html?id=F4">View Details</a>
+                    </article>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+
+            <nav class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Careers</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-links">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <address>
+                    <p>123 Tech Lane, Silicon Valley, CA 90210</p>
+                    <p>Email: <a href="mailto:support@proshop.com">support@proshop.com</a></p>
+                </address>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 ProShop E-commerce. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

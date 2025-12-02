@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | ProShop E-commerce</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>ProShop</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="utility-nav">
+            <a href="cart.html">Cart (3)</a>
+            <a href="account.html">Account</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="shopping-cart">
+            <h1>Your Shopping Cart</h1>
+
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="product-col">Product</th>
+                        <th scope="col" class="price-col">Price</th>
+                        <th scope="col" class="quantity-col">Quantity</th>
+                        <th scope="col" class="subtotal-col">Subtotal</th>
+                        <th scope="col" class="remove-col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="cart-item" data-product-id="101">
+                        <td class="product-info">
+                            <div class="product-image-placeholder">
+                                
+                            </div>
+                            <div class="product-details">
+                                <p class="item-name"><a href="product-details.html?id=101">Laptop Pro X</a></p>
+                                <small>Model: LPX-2025</small>
+                            </div>
+                        </td>
+                        <td class="item-price" data-price="1999.00">$1,999.00</td>
+                        <td class="item-quantity">
+                            <form class="quantity-form">
+                                <label for="qty-101" class="sr-only">Quantity</label>
+                                <input type="number" id="qty-101" name="quantity" value="1" min="1" max="10">
+                                <button type="submit" class="update-qty-button">Update</button>
+                            </form>
+                        </td>
+                        <td class="item-subtotal">$1,999.00</td>
+                        <td class="item-remove">
+                            <button class="remove-item-button" aria-label="Remove Laptop Pro X">Remove</button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-item" data-product-id="102">
+                        <td class="product-info">
+                            <div class="product-image-placeholder">
+                                
+                            </div>
+                            <div class="product-details">
+                                <p class="item-name"><a href="product-details.html?id=102">Aura Headphones</a></p>
+                                <small>Color: Midnight Black</small>
+                            </div>
+                        </td>
+                        <td class="item-price" data-price="349.99">$349.99</td>
+                        <td class="item-quantity">
+                            <form class="quantity-form">
+                                <label for="qty-102" class="sr-only">Quantity</label>
+                                <input type="number" id="qty-102" name="quantity" value="2" min="1" max="10">
+                                <button type="submit" class="update-qty-button">Update</button>
+                            </form>
+                        </td>
+                        <td class="item-subtotal">$699.98</td>
+                        <td class="item-remove">
+                            <button class="remove-item-button" aria-label="Remove Aura Headphones">Remove</button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-item" data-product-id="303">
+                        <td class="product-info">
+                            <div class="product-image-placeholder">
+                                
+                            </div>
+                            <div class="product-details">
+                                <p class="item-name"><a href="product-details.html?id=303">PowerBlend Pro</a></p>
+                                <small>Appliance</small>
+                            </div>
+                        </td>
+                        <td class="item-price" data-price="150.00">$150.00</td>
+                        <td class="item-quantity">
+                            <form class="quantity-form">
+                                <label for="qty-303" class="sr-only">Quantity</label>
+                                <input type="number" id="qty-303" name="quantity" value="1" min="1" max="10">
+                                <button type="submit" class="update-qty-button">Update</button>
+                            </form>
+                        </td>
+                        <td class="item-subtotal">$150.00</td>
+                        <td class="item-remove">
+                            <button class="remove-item-button" aria-label="Remove PowerBlend Pro">Remove</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <div class="cart-summary">
+                <section class="totals-calculation">
+                    <h2>Cart Totals</h2>
+                    <dl class="total-list">
+                        <dt>Subtotal:</dt>
+                        <dd>$2,848.98</dd>
+                        <dt>Shipping:</dt>
+                        <dd>Calculated at checkout</dd>
+                        <dt>Taxes:</dt>
+                        <dd>$142.45</dd>
+                        <dt class="grand-total">Total:</dt>
+                        <dd class="grand-total-amount">$2,991.43</dd>
+                    </dl>
+                </section>
+
+                <div class="checkout-area">
+                    <a href="checkout.html" class="checkout-button">Proceed to Checkout</a>
+                    <a href="products.html" class="continue-shopping-link">or Continue Shopping</a>
+                </div>
+            </div>
+            
+            <p class="empty-cart-message-placeholder" style="display:none;">Your cart is empty. <a href="products.html">Start shopping now!</a></p>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+
+            <nav class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Careers</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-links">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <address>
+                    <p>123 Tech Lane, Silicon Valley, CA 90210</p>
+                    <p>Email: <a href="mailto:support@proshop.com">support@proshop.com</a></p>
+                </address>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 ProShop E-commerce. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

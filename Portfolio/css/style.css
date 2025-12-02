@@ -1,19 +1,49 @@
-html {
-    font-size: 22px;
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman";
 }
 
-body {
-    min-height: 100vh;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-    border-left: 1px solid #333;
-    border-right: 1px solid #333;
+.header{
+  background-color:#f0b111;
+  height: 35px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
 }
-
-th, td, caption {
-    border: 1px solid #333;
-    font-family: 'Courier New', Courier, monospace;
-    border-collapse: separate;
-    padding: 0.5rem;
+.nav{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  flex-grow
+}
+.logo{
+  font-size: 0.87rem;
+  background: linear-gradient(rgba(212,145,68,0.9), rgba(123,45,67,0.7));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  flex-basis: 40%;
+  font-weight: bold;
+}
+.nav-links{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: flex-end;
+  flex-basis: 60%;
+}
+.nav-links li a{
+  text-decoration: none;
+  color: white;
+  font-size: 0.86rem;
+  width: 100%;
+  height: 100%;
+  padding: 5px 3px;
 }

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Name | Details | ProShop E-commerce</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>ProShop</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="utility-nav">
+            <a href="cart.html">Cart (0)</a>
+            <a href="account.html">Account</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="product-detail">
+            <article class="product-info-container">
+
+                <div class="product-image-gallery">
+                    <figure>
+                        <div class="main-image-placeholder">
+                            [Large Image of Product X]
+                        </div>
+                        <figcaption>Product X - Front View</figcaption>
+                    </figure>
+                    <div class="thumbnail-placeholders">
+                        [Thumbnail 1] [Thumbnail 2] [Thumbnail 3]
+                    </div>
+                </div>
+
+                <div class="product-details-content">
+                    <header>
+                        <hgroup>
+                            <h1 id="product-name">Laptop Pro X (Model #LPX-2025)</h1>
+                            <p class="product-tagline">High-performance machine for professionals and gamers.</p>
+                        </hgroup>
+                    </header>
+
+                    <p class="price" id="product-price">
+                        <strong>Price: $1999.00</strong>
+                    </p>
+                    <p class="availability">
+                        Availability: <span class="stock-status">In Stock (Ships in 1-2 days)</span>
+                    </p>
+
+                    <div class="short-description">
+                        <h3>Quick Specs</h3>
+                        <ul>
+                            <li>16GB DDR5 RAM</li>
+                            <li>1TB NVMe SSD</li>
+                            <li>15.6" OLED Display</li>
+                            <li>Intel Core i9 Processor</li>
+                        </ul>
+                    </div>
+
+                    <form action="cart.html" method="POST" class="add-to-cart-form">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" required>
+                        <input type="hidden" name="product_id" value="101">
+                        <button type="submit" class="add-to-cart-button">
+                            🛒 Add to Cart
+                        </button>
+                    </form>
+                </div>
+            </article>
+
+            <div class="full-description">
+                <h2>Product Overview</h2>
+                <p>This Laptop Pro X redefines mobile performance. Featuring the latest generation Intel Core i9 processor and a dedicated high-end GPU, it handles demanding software and AAA games with ease. The stunning 15.6" OLED display provides unparalleled color accuracy and deep blacks, perfect for content creation and entertainment.</p>
+                <p>Built with a premium aluminum chassis, it is both durable and portable. Advanced cooling technology ensures maximum performance without overheating. Experience the future of computing today.</p>
+            </div>
+        </section>
+
+        <section id="customer-reviews">
+            <h2>Customer Reviews (4.8/5 Stars)</h2>
+            <div class="review-list">
+
+                <article class="review-card">
+                    <header>
+                        <h3 class="review-title">Incredible Performance!</h3>
+                        <div class="rating-placeholder">Rating: ⭐⭐⭐⭐⭐</div>
+                        <p class="reviewer-name">Reviewed by: Alex C.</p>
+                    </header>
+                    <p class="review-body">"I use this laptop for video editing, and it absolutely flies. Zero lag, and the screen quality is amazing. Worth every penny."</p>
+                </article>
+
+                <article class="review-card">
+                    <header>
+                        <h3 class="review-title">Great Value for the Price</h3>
+                        <div class="rating-placeholder">Rating: ⭐⭐⭐⭐</div>
+                        <p class="reviewer-name">Reviewed by: Jamie P.</p>
+                    </header>
+                    <p class="review-body">"Solid build quality and runs cool under heavy load. My only small gripe is the battery life when gaming, but otherwise perfect."</p>
+                </article>
+
+                <article class="review-card">
+                    <header>
+                        <h3 class="review-title">A True Workhorse</h3>
+                        <div class="rating-placeholder">Rating: ⭐⭐⭐⭐⭐</div>
+                        <p class="reviewer-name">Reviewed by: Chris M.</p>
+                    </header>
+                    <p class="review-body">"The keyboard feels great and the machine handles all my development tasks flawlessly. Highly recommend for professional use."</p>
+                </article>
+                
+            </div>
+            <a href="#submit-review" class="write-review-link">Write a Review</a>
+        </section>
+
+
+        <section id="related-products">
+            <h2>You Might Also Like</h2>
+            <div class="related-products-grid">
+
+                <article class="related-product-card">
+                    <div class="related-image-placeholder">[attachment_0](attachment)</div>
+                    <h3>4K Ultra Monitor</h3>
+                    <p class="price">$550.00</p>
+                    <a href="product-details.html?id=601">View Item</a>
+                </article>
+
+                <article class="related-product-card">
+                    <div class="related-image-placeholder">[attachment_1](attachment)</div>
+                    <h3>Ergonomic Wireless Mouse</h3>
+                    <p class="price">$45.00</p>
+                    <a href="product-details.html?id=602">View Item</a>
+                </article>
+
+                <article class="related-product-card">
+                    <div class="related-image-placeholder">[attachment_2](attachment)</div>
+                    <h3>Mechanical Keyboard</h3>
+                    <p class="price">$120.00</p>
+                    <a href="product-details.html?id=603">View Item</a>
+                </article>
+
+                <article class="related-product-card">
+                    <div class="related-image-placeholder">[attachment_3](attachment)</div>
+                    <h3>Tech Travel Backpack</h3>
+                    <p class="price">$85.00</p>
+                    <a href="product-details.html?id=604">View Item</a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+
+            <nav class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Careers</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-links">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <address>
+                    <p>123 Tech Lane, Silicon Valley, CA 90210</p>
+                    <p>Email: <a href="mailto:support@proshop.com">support@proshop.com</a></p>
+                </address>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 ProShop E-commerce. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

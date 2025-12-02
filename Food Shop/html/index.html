@@ -1,82 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="author" content="Md Musa">
-  <meta name="description" content="shop main page">
- <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon" >
- <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" >
- 
-  <title>project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Delight - The Taste You Love</title>
 </head>
 <body>
-  <header id="header">
-    <nav>
-      <ul>
-        <li>
-          <a href="Contect.html">Contect</a>
-        </li>
-        <li>
-          <a href="#about">about LTS</a>
-        </li>
-        <li>
-          <a href="#menu">Our Menu</a>
-        </li>
-        <li>
-          <a href="hours.html">Store Hours</a>
-        </li>
-      </ul>
-    </nav>
-    <figure>
-      <img src="../image/tacos_close_up_400x260.png" alt="tacos">
-      <figcaption>little taco shop tacos</figcaption>
-    </figure>
-  </header>
-  <main>
-    <section>
-     <h2>Our Contect Form</h2>
-     <form action="#" method="get"    accept-charset="utf-8">
-      <fieldset>
-      <legend>Send Us A Message</legend>
-        <p>
-          <label for="Name">Name:</label>
-          <input type="text" name="Name" id="Name" placeholder="Yor Name" >
-        </p>
-        <p>
-         <label for="email">Email:</label>
-         <input type="email" id="email" name="email" placeholder="Yor email">
-        </p>
-        <label for="Yor Message"></label>
-        <textarea name="message" id=message rows="10" cols="40"></textarea>
-      
-    </fieldset>
-      <input type="submit" name="submit">
-      <input type="reset" name="reset">
-     </form>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Foodie Delight</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">
+            <h2>Welcome to Foodie Delight</h2>
+            <p>Delicious meals, fresh ingredients, and fast delivery!</p>
+            <a href="#menu">Order Now</a>
+        </div>
     </section>
-    <section>
-    <h2>Our Location</h2>
-    <address>
-      Sarankhola Thana, Bagerhat Zela, Bangladesh, sity post cod 6200, Mo:+8801705613513
-      <br><br>
-     Phone: <a href="tel:+8801705613513">+8801705613513</a> <br><br>
-     Email: <a href="mailto:hello@exampal.com">Email Me</a>
-     whatsapp: <a href="https:wa.me/+8801705613513">hi</a>
-    </address>
+
+    <!-- Featured Specials Section -->
+    <section id="specials">
+        <h2>Our Specials</h2>
+        <div class="special-items">
+            <div class="item">
+                <h3>Margherita Pizza</h3>
+                <p>Classic Italian pizza with fresh basil and mozzarella.</p>
+                <p>Price: $12</p>
+            </div>
+            <div class="item">
+                <h3>Cheeseburger Deluxe</h3>
+                <p>Juicy beef patty with cheddar cheese, lettuce, and tomato.</p>
+                <p>Price: $8</p>
+            </div>
+            <div class="item">
+                <h3>Spaghetti Carbonara</h3>
+                <p>Creamy pasta with pancetta and parmesan cheese.</p>
+                <p>Price: $10</p>
+            </div>
+            <div class="item">
+                <h3>Fresh Caesar Salad</h3>
+                <p>Crisp romaine, parmesan, croutons, and homemade dressing.</p>
+                <p>Price: $6</p>
+            </div>
+        </div>
     </section>
-  </main>
-  <audio controls>
-    <source src="../audio/My_best_ringtone_new_viral_ringtone_2023(256k).mp3" type="audio/mpeg"  />
-  </audio>
-  <video width="300" autoplay controls>
-    <source src="../video/7f1d1a31cdf05816b2eed63c86178e69.mp4" type="video/mp4" />
-  </video>
-  <hr>
-  <footer>
-    copyright &copy; all right reserbe by 
-  </footer>
-  <script src="../js/index.js"></script>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Full Menu</h2>
+        <div class="menu-category">
+            <h3>Pizzas</h3>
+            <ul>
+                <li>Margherita - $12</li>
+                <li>Pepperoni - $14</li>
+                <li>Veggie Delight - $11</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Burgers</h3>
+            <ul>
+                <li>Cheeseburger Deluxe - $8</li>
+                <li>Bacon Burger - $9</li>
+                <li>Veggie Burger - $7</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Pasta</h3>
+            <ul>
+                <li>Spaghetti Carbonara - $10</li>
+                <li>Fettuccine Alfredo - $11</li>
+                <li>Penne Arrabbiata - $9</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Salads</h3>
+            <ul>
+                <li>Caesar Salad - $6</li>
+                <li>Greek Salad - $7</li>
+                <li>Garden Salad - $5</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Foodie Delight has been serving fresh, delicious meals since 2020. Our mission is to bring joy to every bite. We use high-quality ingredients and care about your experience.</p>
+        <p>Location: 123 Food Street, Delicious City</p>
+        <p>Open Hours: Mon-Sun 10:00 AM - 10:00 PM</p>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <p>"Amazing food and fast delivery! Highly recommend." - Jane D.</p>
+        </div>
+        <div class="review">
+            <p>"Best pizza in town! Fresh and tasty." - Mark S.</p>
+        </div>
+        <div class="review">
+            <p>"Friendly staff and delicious meals every time." - Lisa K.</p>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <input type="submit" value="Subscribe">
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email-contact">Email:</label>
+            <input type="email" id="email-contact" name="email-contact"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+        <p>Phone: +123 456 7890</p>
+        <p>Email: contact@foodiedelight.com</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Foodie Delight. All rights reserved.</p>
+        <p>Follow us on: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+    </footer>
 </body>
 </html>

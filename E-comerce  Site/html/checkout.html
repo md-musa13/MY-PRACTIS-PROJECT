@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | ProShop E-commerce</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>ProShop</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="utility-nav">
+            <a href="cart.html">Cart (3)</a>
+            <a href="account.html">Account</a>
+        </div>
+    </header>
+
+    <main class="checkout-layout">
+        <section id="checkout-process">
+            <h1>Secure Checkout</h1>
+
+            <form action="order-confirmation.html" method="POST" class="checkout-form">
+
+                <fieldset class="form-section billing-details">
+                    <legend>1. Billing Information</legend>
+
+                    <label for="billing-name">Full Name *</label>
+                    <input type="text" id="billing-name" name="billing_name" required>
+
+                    <label for="billing-email">Email Address *</label>
+                    <input type="email" id="billing-email" name="billing_email" required>
+
+                    <label for="billing-phone">Phone Number</label>
+                    <input type="tel" id="billing-phone" name="billing_phone">
+
+                    <label for="billing-address1">Address Line 1 *</label>
+                    <input type="text" id="billing-address1" name="billing_address1" required>
+
+                    <label for="billing-city">City *</label>
+                    <input type="text" id="billing-city" name="billing_city" required>
+
+                    <label for="billing-zip">Zip/Postal Code *</label>
+                    <input type="text" id="billing-zip" name="billing_zip" required>
+                </fieldset>
+
+                <fieldset class="form-section shipping-details">
+                    <legend>2. Shipping Information</legend>
+
+                    <div class="same-as-billing">
+                        <input type="checkbox" id="same-as-billing" name="same_as_billing" checked>
+                        <label for="same-as-billing">Shipping address same as billing</label>
+                    </div>
+
+                    <div class="shipping-fields-container">
+                        <label for="shipping-name">Full Name *</label>
+                        <input type="text" id="shipping-name" name="shipping_name">
+
+                        <label for="shipping-address1">Address Line 1 *</label>
+                        <input type="text" id="shipping-address1" name="shipping_address1">
+
+                        <label for="shipping-city">City *</label>
+                        <input type="text" id="shipping-city" name="shipping_city">
+
+                        <label for="shipping-zip">Zip/Postal Code *</label>
+                        <input type="text" id="shipping-zip" name="shipping_zip">
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-section payment-method">
+                    <legend>3. Payment Method</legend>
+
+                    <div class="payment-option">
+                        <input type="radio" id="pay-cc" name="payment_method" value="credit_card" checked>
+                        <label for="pay-cc">Credit/Debit Card</label>
+                        <div class="payment-details-cc">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX">
+                            <label for="card-expiry">Expiry (MM/YY)</label>
+                            <input type="text" id="card-expiry" placeholder="MM/YY">
+                            <label for="card-cvv">CVV</label>
+                            <input type="text" id="card-cvv" placeholder="123">
+                        </div>
+                    </div>
+
+                    <div class="payment-option">
+                        <input type="radio" id="pay-paypal" name="payment_method" value="paypal">
+                        <label for="pay-paypal">PayPal</label>
+                        <p class="paypal-info-placeholder">[Link to log in to PayPal will be here]</p>
+                    </div>
+
+                    <div class="payment-option">
+                        <input type="radio" id="pay-cod" name="payment_method" value="cod">
+                        <label for="pay-cod">Cash on Delivery (COD)</label>
+                    </div>
+                </fieldset>
+
+                <aside class="order-summary-block">
+                    <h2>Order Summary</h2>
+                    <ul class="summary-items">
+                        <li>Laptop Pro X (x1) - $1,999.00</li>
+                        <li>Aura Headphones (x2) - $699.98</li>
+                        <li>PowerBlend Pro (x1) - $150.00</li>
+                    </ul>
+
+                    <dl class="total-breakdown">
+                        <dt>Subtotal</dt>
+                        <dd>$2,848.98</dd>
+                        <dt>Shipping</dt>
+                        <dd>$15.00</dd>
+                        <dt>Tax (5%)</dt>
+                        <dd>$142.45</dd>
+                        <dt class="grand-total-label">Grand Total</dt>
+                        <dd class="grand-total-value">$3,006.43</dd>
+                    </dl>
+
+                    <button type="submit" class="place-order-button">
+                        Place Order ($3,006.43)
+                    </button>
+
+                    <p class="security-note">By placing your order, you agree to our Terms & Conditions.</p>
+                </aside>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+
+            <nav class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Careers</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-links">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <address>
+                    <p>123 Tech Lane, Silicon Valley, CA 90210</p>
+                    <p>Email: <a href="mailto:support@proshop.com">support@proshop.com</a></p>
+                </address>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 ProShop E-commerce. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

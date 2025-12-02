@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | ProShop E-commerce</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>ProShop</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="utility-nav">
+            <a href="cart.html">Cart (0)</a>
+            <a href="account.html">Account</a>
+        </div>
+    </header>
+
+    <main class="products-page-layout">
+
+        <aside class="product-filters">
+            <h2>Filter Products</h2>
+
+            <section class="filter-group">
+                <h3>Price Range</h3>
+                <form>
+                    <label for="min-price">Min Price:</label>
+                    <input type="number" id="min-price" name="min-price" value="0" placeholder="$0">
+                    <label for="max-price">Max Price:</label>
+                    <input type="number" id="max-price" name="max-price" value="5000" placeholder="$5000">
+                    <button type="submit">Apply</button>
+                </form>
+            </section>
+
+            <section class="filter-group">
+                <h3>Category</h3>
+                <ul>
+                    <li><input type="checkbox" id="cat-electronics" name="category" value="electronics"><label for="cat-electronics">Electronics</label></li>
+                    <li><input type="checkbox" id="cat-fashion" name="category" value="fashion"><label for="cat-fashion">Fashion</label></li>
+                    <li><input type="checkbox" id="cat-home" name="category" value="home"><label for="cat-home">Home & Kitchen</label></li>
+                    <li><input type="checkbox" id="cat-books" name="category" value="books"><label for="cat-books">Books</label></li>
+                    <li><input type="checkbox" id="cat-sports" name="category" value="sports"><label for="cat-sports">Sports</label></li>
+                </ul>
+            </section>
+
+            <section class="filter-group">
+                <h3>Customer Rating</h3>
+                <ul>
+                    <li><input type="radio" id="rating-5" name="rating" value="5"><label for="rating-5">⭐⭐⭐⭐⭐</label></li>
+                    <li><input type="radio" id="rating-4up" name="rating" value="4up"><label for="rating-4up">⭐⭐⭐⭐ & up</label></li>
+                    <li><input type="radio" id="rating-3up" name="rating" value="3up"><label for="rating-3up">⭐⭐⭐ & up</label></li>
+                </ul>
+            </section>
+        </aside>
+
+        <section id="product-listing">
+            <h1>All Products</h1>
+
+            <section class="product-category" id="electronics">
+                <h2>Electronics</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_0](attachment)</div>
+                        <h3>Laptop Pro X</h3>
+                        <p class="description">High-end gaming laptop.</p>
+                        <p class="price">$1999.00</p>
+                        <a href="product-details.html?id=101" class="details-link">View Details</a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_1](attachment)</div>
+                        <h3>Aura Headphones</h3>
+                        <p class="description">Premium wireless audio.</p>
+                        <p class="price">$349.99</p>
+                        <a href="product-details.html?id=102" class="details-link">View Details</a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_2](attachment)</div>
+                        <h3>Chronos Watch 3</h3>
+                        <p class="description">Fitness and health tracker.</p>
+                        <p class="price">$299.00</p>
+                        <a href="product-details.html?id=103" class="details-link">View Details</a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_3](attachment)</div>
+                        <h3>Vision Smart TV</h3>
+                        <p class="description">55-inch crystal clear 4K.</p>
+                        <p class="price">$899.50</p>
+                        <a href="product-details.html?id=104" class="details-link">View Details</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="product-category" id="fashion">
+                <h2>Fashion</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_4](attachment)</div>
+                        <h3>The Voyager Jacket</h3>
+                        <p class="description">Classic leather jacket.</p>
+                        <p class="price">$195.00</p>
+                        <a href="product-details.html?id=201" class="details-link">View Details</a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image-placeholder"></div>
+                        <h3>Precision Chronograph</h3>
+                        <p class="description">Luxury stainless steel watch.</p>
+                        <p class="price">$450.00</p>
+                        <a href="product-details.html?id=202" class="details-link">View Details</a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_5](attachment)</div>
+                        <h3>Nimbus Running Shoes</h3>
+                        <p class="description">Ultra-light comfort runners.</p>
+                        <p class="price">$110.00</p>
+                        <a href="product-details.html?id=203" class="details-link">View Details</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="product-category" id="home-kitchen">
+                <h2>Home & Kitchen</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_6](attachment)</div>
+                        <h3>Aroma Coffee Brewer</h3>
+                        <p class="description">Programmable 12-cup machine.</p>
+                        <p class="price">$75.99</p>
+                        <a href="product-details.html?id=301" class="details-link">View Details</a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_7](attachment)</div>
+                        <h3>AutoClean Robot</h3>
+                        <p class="description">Smart home vacuum cleaner.</p>
+                        <p class="price">$399.00</p>
+                        <a href="product-details.html?id=302" class="details-link">View Details</a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_8](attachment)</div>
+                        <h3>PowerBlend Pro</h3>
+                        <p class="description">High-speed professional blender.</p>
+                        <p class="price">$150.00</p>
+                        <a href="product-details.html?id=303" class="details-link">View Details</a>
+                    </article>
+                    
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_9](attachment)</div>
+                        <h3>Crisp Air Fryer</h3>
+                        <p class="description">Healthy oil-free cooking.</p>
+                        <p class="price">$89.99</p>
+                        <a href="product-details.html?id=304" class="details-link">View Details</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="product-category" id="books">
+                <h2>Books</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_10](attachment)</div>
+                        <h3>The Star Traveler</h3>
+                        <p class="description">Epic Sci-Fi bestseller.</p>
+                        <p class="price">$14.99</p>
+                        <a href="product-details.html?id=401" class="details-link">View Details</a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_11](attachment)</div>
+                        <h3>The Complete Chef</h3>
+                        <p class="description">Comprehensive recipe book.</p>
+                        <p class="price">$29.50</p>
+                        <a href="product-details.html?id=402" class="details-link">View Details</a>
+                    </article>
+                </div>
+            </section>
+            
+            <section class="product-category" id="sports">
+                <h2>Sports</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_12](attachment)</div>
+                        <h3>ProFit Yoga Mat</h3>
+                        <p class="description">Non-slip, extra thick.</p>
+                        <p class="price">$35.00</p>
+                        <a href="product-details.html?id=501" class="details-link">View Details</a>
+                    </article>
+                    
+                    <article class="product-card">
+                        <div class="product-image-placeholder">[attachment_13](attachment)</div>
+                        <h3>Fitness Band Set</h3>
+                        <p class="description">Set of 5 resistance levels.</p>
+                        <p class="price">$22.00</p>
+                        <a href="product-details.html?id=502" class="details-link">View Details</a>
+                    </article>
+                </div>
+            </section>
+
+
+            <nav aria-label="Product Pagination" class="pagination">
+                <ul>
+                    <li><a href="#" class="disabled">Previous</a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">Next</a></li>
+                </ul>
+            </nav>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+
+            <nav class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Careers</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-links">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <address>
+                    <p>123 Tech Lane, Silicon Valley, CA 90210</p>
+                    <p>Email: <a href="mailto:support@proshop.com">support@proshop.com</a></p>
+                </address>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 ProShop E-commerce. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

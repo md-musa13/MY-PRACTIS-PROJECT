@@ -1,82 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="author" content="Md Musa">
-  <meta name="description" content="shop main page">
- <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon" >
- <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" >
- 
-  <title>project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ProShop E-commerce</title>
 </head>
 <body>
-  <header id="header">
-    <nav>
-      <ul>
-        <li>
-          <a href="Contect.html">Contect</a>
-        </li>
-        <li>
-          <a href="#about">about LTS</a>
-        </li>
-        <li>
-          <a href="#menu">Our Menu</a>
-        </li>
-        <li>
-          <a href="hours.html">Store Hours</a>
-        </li>
-      </ul>
-    </nav>
-    <figure>
-      <img src="../image/tacos_close_up_400x260.png" alt="tacos">
-      <figcaption>little taco shop tacos</figcaption>
-    </figure>
-  </header>
-  <main>
-    <section>
-     <h2>Our Contect Form</h2>
-     <form action="#" method="get"    accept-charset="utf-8">
-      <fieldset>
-      <legend>Send Us A Message</legend>
-        <p>
-          <label for="Name">Name:</label>
-          <input type="text" name="Name" id="Name" placeholder="Yor Name" >
-        </p>
-        <p>
-         <label for="email">Email:</label>
-         <input type="email" id="email" name="email" placeholder="Yor email">
-        </p>
-        <label for="Yor Message"></label>
-        <textarea name="message" id=message rows="10" cols="40"></textarea>
-      
-    </fieldset>
-      <input type="submit" name="submit">
-      <input type="reset" name="reset">
-     </form>
-    </section>
-    <section>
-    <h2>Our Location</h2>
-    <address>
-      Sarankhola Thana, Bagerhat Zela, Bangladash, sity post cod 6200, Mo:+8801705613513
-      <br><br>
-     Phone: <a href="tel:+8801705613513">+8801705613513</a> <br><br>
-     Email: <a href="mailto:hello@exampal.com">Email Me</a>
-     whatsapp: <a href="https:wa.me/+8801705613513">hi</a>
-    </address>
-    </section>
-  </main>
-  <audio controls>
-    <source src="../audio/My_best_ringtone_new_viral_ringtone_2023(256k).mp3" type="audio/mpeg"  />
-  </audio>
-  <video width="300" autoplay controls>
-    <source src="../video/7f1d1a31cdf05816b2eed63c86178e69.mp4" type="video/mp4" />
-  </video>
-  <hr>
-  <footer>
-    copyright &copy; all right reserbe by 
-  </footer>
-  <script src="../js/index.js"></script>
+
+    <header>
+        <div class="logo">
+            <h1>ProShop</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="utility-nav">
+            <a href="cart.html">Cart (0)</a>
+            <a href="account.html">Account</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Welcome to ProShop!</h2>
+                <p>Your one-stop destination for the latest and greatest tech gadgets.</p>
+                <a href="products.html" class="cta-button">Shop Now</a>
+            </div>
+            <div class="hero-media-placeholder">
+                
+            </div>
+        </section>
+
+        <section id="featured-products">
+            <h2>🔥 Featured Products</h2>
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <div class="product-image-placeholder">
+                        
+                    </div>
+                    <h3>Product Name 1</h3>
+                    <p class="description">High-performance laptop with all-day battery life.</p>
+                    <p class="price">$1299.00</p>
+                    <a href="product-details.html?id=1" class="details-link">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-placeholder">
+                        
+                    </div>
+                    <h3>Product Name 2</h3>
+                    <p class="description">Noise-cancelling over-ear headphones for immersive sound.</p>
+                    <p class="price">$249.99</p>
+                    <a href="product-details.html?id=2" class="details-link">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-placeholder">
+                        
+                    </div>
+                    <h3>Product Name 3</h3>
+                    <p class="description">4K Smart TV with stunning clarity and smart features.</p>
+                    <p class="price">$799.50</p>
+                    <a href="product-details.html?id=3" class="details-link">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-placeholder">
+                        
+                    </div>
+                    <h3>Product Name 4</h3>
+                    <p class="description">Ultra-fast SSD drive for lightning-speed data transfer.</p>
+                    <p class="price">$119.99</p>
+                    <a href="product-details.html?id=4" class="details-link">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-placeholder">
+                        
+                    </div>
+                    <h3>Product Name 5</h3>
+                    <p class="description">Wireless gaming mouse with customizable buttons.</p>
+                    <p class="price">$79.00</p>
+                    <a href="product-details.html?id=5" class="details-link">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-placeholder">
+                        
+                    </div>
+                    <h3>Product Name 6</h3>
+                    <p class="description">Smartwatch that tracks fitness, sleep, and notifications.</p>
+                    <p class="price">$199.00</p>
+                    <a href="product-details.html?id=6" class="details-link">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-placeholder">
+                        
+                    </div>
+                    <h3>Product Name 7</h3>
+                    <p class="description">Portable Bluetooth speaker with deep bass.</p>
+                    <p class="price">$59.99</p>
+                    <a href="product-details.html?id=7" class="details-link">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-placeholder">
+                        
+                    </div>
+                    <h3>Product Name 8</h3>
+                    <p class="description">Mechanical keyboard for tactile typing and gaming.</p>
+                    <p class="price">$149.00</p>
+                    <a href="product-details.html?id=8" class="details-link">View Details</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="categories">
+            <h2>Browse Categories</h2>
+            <ul class="category-list">
+                <li><a href="categories.html#laptops">Laptops & PCs</a></li>
+                <li><a href="categories.html#audio">Audio & Headphones</a></li>
+                <li><a href="categories.html#tvs">Smart TVs</a></li>
+                <li><a href="categories.html#storage">Storage Devices</a></li>
+                <li><a href="categories.html#gaming">Gaming Gear</a></li>
+                <li><a href="categories.html#wearables">Smart Wearables</a></li>
+                <li><a href="categories.html#cameras">Cameras</a></li>
+                <li><a href="categories.html#accessories">Accessories</a></li>
+            </ul>
+        </section>
+
+        <section id="special-offers">
+            <h2>📢 Special Offers</h2>
+            <div class="offer-banners">
+                <a href="#" class="banner-placeholder">
+                    <div class="banner-content">
+                        <h3>Banner 1: 50% Off Select Items!</h3>
+                        <p>Limited-time deal on last season's favorites.</p>
+                    </div>
+                </a>
+                <a href="#" class="banner-placeholder">
+                    <div class="banner-content">
+                        <h3>Banner 2: Free Shipping</h3>
+                        <p>On all orders over $100 this week.</p>
+                    </div>
+                </a>
+                <a href="#" class="banner-placeholder">
+                    <div class="banner-content">
+                        <h3>Banner 3: New Arrivals</h3>
+                        <p>Check out the freshest tech now!</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Hear From Our Customers</h2>
+            <div class="review-container">
+                <blockquote class="testimonial-card">
+                    <p>"The best online shopping experience I've had. Fast delivery and top-notch quality!"</p>
+                    <footer>- Sarah K.</footer>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                    <p>"Fantastic customer service and an easy-to-navigate site. Highly recommend ProShop."</p>
+                    <footer>- Michael D.</footer>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                    <p>"Great prices and a wide selection. My new go-to for all my tech needs."</p>
+                    <footer>- Jessica L.</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <h2>Join Our Newsletter</h2>
+            <p>Get the latest updates on products and exclusive discounts.</p>
+            <form action="#" method="POST" class="newsletter-form">
+                <label for="email" class="sr-only">Enter your email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+
+            <nav class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Careers</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-links">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <address>
+                    <p>123 Tech Lane, Silicon Valley, CA 90210</p>
+                    <p>Email: <a href="mailto:support@proshop.com">support@proshop.com</a></p>
+                </address>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 ProShop E-commerce. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
 </body>
 </html>
